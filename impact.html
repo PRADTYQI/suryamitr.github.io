@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suryamitr Connect – Impact Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0b3c5d, #1c6e8c);
+      color: #fff;
+      padding: 60px 10%;
+    }
+    header h1 { font-size: 2.6rem; margin-bottom: 10px; }
+    header p { max-width: 900px; font-size: 1.05rem; }
+    section {
+      padding: 60px 10%;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #0b3c5d;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .metric {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: #0b3c5d;
+    }
+    .label {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 5px;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 20px;
+      max-width: 900px;
+    }
+    footer {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 30px 10%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .placeholder {
+      margin-top: 15px;
+      padding: 15px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      color: #777;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Impact Dashboard</h1>
+  <p>
+    This public dashboard transparently tracks the environmental and social impact
+    of the Suryamitr Connect rural solar initiative. All metrics shown here are
+    measured, estimated, or simulated during the Proof of Concept phase and
+    will be updated as systems are deployed.
+  </p>
+</header>
+
+<section>
+  <h2>Key Impact Metrics</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="metric">5</div>
+      <div class="label">Households Powered (PoC Target)</div>
+    </div>
+    <div class="card">
+      <div class="metric">7.5 kW</div>
+      <div class="label">Total Solar Capacity Installed</div>
+    </div>
+    <div class="card">
+      <div class="metric">90 MWh</div>
+      <div class="label">Estimated Annual Clean Energy</div>
+    </div>
+    <div class="card">
+      <div class="metric">74 tCO₂</div>
+      <div class="label">Annual Emissions Avoided</div>
+    </div>
+  </div>
+
+  <p class="note">
+    Emissions avoided are estimated using the Jharkhand grid emission factor
+    (0.82 tCO₂/MWh). Figures will be refined using real-time IoT meter data.
+  </p>
+</section>
+
+<section>
+  <h2>Social Impact Indicators</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="metric">₹400+</div>
+      <div class="label">Monthly Energy Savings per Household</div>
+    </div>
+    <div class="card">
+      <div class="metric">8–14 hrs</div>
+      <div class="label">Reduction in Daily Power Outages</div>
+    </div>
+    <div class="card">
+      <div class="metric">5+</div>
+      <div class="label">Women SHG Members Engaged</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Live Data & Transparency</h2>
+  <p>
+    As systems go live, this page will integrate real-time and historical data
+    from IoT energy meters and open-source energy management systems.
+  </p>
+  <div class="placeholder">
+    📊 Live energy generation chart placeholder<br/>
+    (Hourly / daily / monthly kWh data)
+  </div>
+  <div class="placeholder">
+    📍 Map placeholder showing installation locations (Barharwa block)
+  </div>
+</section>
+
+<section>
+  <h2>Carbon Accounting Methodology</h2>
+  <p>
+    Carbon impact is calculated based on metered solar electricity generation
+    multiplied by the applicable grid emission factor for Jharkhand.
+  </p>
+  <ul>
+    <li>Baseline: Grid electricity displaced by rooftop solar</li>
+    <li>Emission factor: 0.82 tCO₂ per MWh (CEA reference)</li>
+    <li>Data source: IoT meters with timestamped kWh readings</li>
+    <li>Status: Simulation during PoC; verification planned post-scale</li>
+  </ul>
+
+  <p class="note">
+    This initiative does not currently sell or trade carbon credits.
+    Carbon figures are reported for transparency and learning purposes only.
+  </p>
+</section>
+
+<section>
+  <h2>Updates & Reporting</h2>
+  <p>
+    Impact data will be updated quarterly during the PoC phase and shared
+    publicly to maintain transparency with supporters and communities.
+  </p>
+</section>
+
+<footer>
+  <p>
+    © 2025 Suryamitr Connect • Public Impact Dashboard<br/>
+    Contact: suryamitr.connect@gmail.com
+  </p>
+</footer>
+
+</body>
+</html>
