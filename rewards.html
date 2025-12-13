@@ -18,17 +18,15 @@
       padding: 70px 10%;
     }
     header h1 { font-size: 2.6rem; margin-bottom: 10px; }
-    header p { font-size: 1.1rem; max-width: 800px; }
+    header p { font-size: 1.1rem; max-width: 900px; }
     section {
       padding: 60px 10%;
       border-bottom: 1px solid #e0e0e0;
+      background: #ffffff;
     }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      color: #0b3c5d;
-    }
+    h2 { font-size: 2rem; margin-bottom: 15px; color: #0b3c5d; }
     h3 { font-size: 1.3rem; margin-top: 20px; }
+    ul { margin-left: 20px; }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -50,38 +48,51 @@
       font-weight: bold;
       border-radius: 6px;
       text-decoration: none;
-    }
-    footer {
-      background: #0b3c5d;
-      color: #fff;
-      padding: 30px 10%;
-      text-align: center;
-      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
     }
     .note {
       font-size: 0.9rem;
       color: #555;
       margin-top: 15px;
     }
+    .placeholder {
+      margin-top: 15px;
+      padding: 15px;
+      border: 2px dashed #ccc;
+      border-radius: 8px;
+      text-align: center;
+      color: #777;
+      font-size: 0.85rem;
+    }
+    footer {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 30px 10%;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    footer a { color: #ddd; text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Support Rural Solar – Crowdfunding Rewards</h1>
+  <h1>Support Rural Solar in Jharkhand</h1>
   <p>
-    Suryamitr Connect invites supporters from India and around the world to participate
-    in a <b>reward-based crowdfunding campaign</b> that brings reliable solar electricity
-    to rural households in Jharkhand.
+    Suryamitr Connect is a <b>reward-based crowdfunding initiative</b> enabling
+    clean, reliable solar electricity for rural households in Jharkhand.
+    Contributions are voluntary and provide symbolic recognition —
+    <b>not financial returns</b>.
   </p>
 </header>
 
 <section>
   <h2>How Rewards Work</h2>
   <ul>
-    <li>Contributions are voluntary and support solar deployment</li>
-    <li>Supporters receive symbolic, non-financial recognition</li>
-    <li>No ownership, profit-sharing, or guaranteed returns</li>
+    <li>Contributions support installation and operation of rooftop solar systems</li>
+    <li>This is <b>not an investment</b>; no equity, debt, or profit-sharing</li>
+    <li>Supporters receive recognition-based rewards</li>
     <li>Rewards are issued after installation milestones</li>
   </ul>
 </section>
@@ -89,6 +100,7 @@
 <section>
   <h2>Contribution Tiers & Recognition</h2>
   <div class="grid">
+
     <div class="card">
       <h3>₹1,000 / $15 – Solar Supporter</h3>
       <ul>
@@ -97,129 +109,116 @@
         <li>Email impact updates</li>
       </ul>
     </div>
+
     <div class="card">
       <h3>₹5,000 / $60 – Panel Patron</h3>
       <ul>
         <li>Engraved sticker on solar panel frame</li>
-        <li>Installation photo of the supported system</li>
+        <li>Installation photo of supported system</li>
         <li>Quarterly impact summary</li>
       </ul>
     </div>
+
     <div class="card">
       <h3>₹10,000 / $120 – Named Solar Panel</h3>
       <ul>
-        <li>Permanent engraving on solar panel: <br/><i>"Donated by [Your Name]"</i></li>
+        <li>Permanent engraving on solar panel:<br/><i>"Donated by [Your Name]"</i></li>
         <li>Photo with GPS-tagged location</li>
-        <li>Annual energy & carbon impact summary</li>
+        <li>Annual energy & CO₂ impact summary</li>
       </ul>
-      <div style="margin-top:15px; padding:15px; border:2px dashed #ccc; border-radius:8px; text-align:center; color:#777; font-size:0.9rem;">
+      <div class="placeholder">
         📸 Photo Placeholder<br/>
-        <span style="font-size:0.85rem;">Actual image of installed solar panel with donor name will appear here</span>
+        Actual image of installed panel with donor name will appear here
       </div>
     </div>
+
     <div class="card">
       <h3>₹50,000 / $600 – Rooftop Champion</h3>
       <ul>
         <li>Recognition plaque at household site</li>
-        <li>Story of beneficiary family</li>
+        <li>Story of beneficiary household</li>
         <li>Priority access to impact dashboard</li>
       </ul>
     </div>
-      <div class="card">
+
+    <div class="card">
       <h3>₹1,00,000 / $1,200 – Foundation Supporter</h3>
       <ul>
         <li>Recognition as <i>"Foundation Supporter"</i> on website</li>
         <li>Engraved acknowledgement on project signage (non-promotional)</li>
-        <li>Impact summary report (energy generated, households supported)</li>
-        <li>Optional logo/name mention (subject to neutrality & community consent)</li>
+        <li>Impact summary report (energy & households)</li>
+        <li>Optional logo/name mention (subject to neutrality & consent)</li>
       </ul>
-      <div style="margin-top:15px; padding:15px; border:2px dashed #ccc; border-radius:8px; text-align:center; color:#777; font-size:0.9rem;">
+      <div class="placeholder">
         🏷 Recognition Placeholder<br/>
-        <span style="font-size:0.85rem;">Foundation acknowledgement will be displayed here after deployment</span>
+        Foundation acknowledgement will be displayed here
       </div>
     </div>
+
   </div>
 
   <p class="note">
-    Recognition text may be adjusted for space and cultural sensitivity.
-    Physical rewards are subject to installation timelines.
+    Recognition text and placement may be adjusted for technical, cultural,
+    or community considerations.
   </p>
 </section>
 
 <section>
   <h2>How to Contribute</h2>
-  <h3>India – UPI / Razorpay</h3>
-<p>
-Support our rural solar initiative via UPI. Contributions are
-<b>voluntary, reward-based, and non-investment</b>.
-</p>
+  <div class="grid">
 
-<!-- UPI QR PLACEHOLDER -->
-<div style="margin:15px 0; padding:15px; border:2px dashed #ccc; border-radius:8px; text-align:center; color:#777;">
-  📱 UPI QR Code Placeholder<br/>
-  <span style="font-size:0.85rem;">
-    Scan using any UPI app (GPay, PhonePe, Paytm, BHIM)
-  </span>
-</div>
-
-<!-- Razorpay Payment Button -->
-<a href="https://pages.razorpay.com/YOUR_RAZORPAY_PAGE"
-   target="_blank"
-   class="cta">
-   Contribute via UPI / Cards
-</a>
-
-<p style="font-size:0.85rem; margin-top:10px; color:#555;">
-  • This is a reward-based contribution, not an investment<br/>
-  • No financial returns, profit-sharing, or ownership<br/>
-  • Recognition rewards only (as listed on Rewards page)
-</p>
-
-<p style="font-size:0.8rem;">
-  By contributing, you agree to our
-  <a href="disclaimer.html">Donor Disclaimer & Terms</a>.
-</p>
-
-       <h3>Global – PayPal</h3>
-<p>For international supporters and NRIs.</p>
-
-<form action="https://www.paypal.com/donate" method="post" target="_blank">
-  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL" />
-  <input type="hidden" name="no_recurring" value="0" />
-  <input type="hidden" name="item_name"
-    value="Suryamitr Connect – Reward-Based Crowdfunding for Rural Solar (No investment, no financial return)" />
-  <input type="hidden" name="currency_code" value="USD" />
-  <button type="submit" class="cta">Donate via PayPal</button>
-</form>
-
-<p class="note">
-  Secure PayPal donation • Reward-based crowdfunding • No investment or financial return
-</p>
-<p style="font-size:0.8rem;">
-By contributing, you agree to our
-<a href="disclaimer.html">Donor Disclaimer & Terms</a>.
-</p>
-
+    <div class="card">
+      <h3>India – UPI / Razorpay</h3>
+      <p>
+        Support via UPI or cards. Contributions are voluntary,
+        reward-based, and non-investment.
+      </p>
+      <div class="placeholder">
+        📱 UPI QR Code Placeholder<br/>
+        Scan with GPay, PhonePe, Paytm, BHIM
+      </div>
+      <a class="cta" href="https://pages.razorpay.com/YOUR_RAZORPAY_PAGE" target="_blank">
+        Contribute via UPI / Cards
+      </a>
+      <p class="note">
+        • No financial returns or ownership<br/>
+        • Recognition rewards only
+      </p>
+      <p style="font-size:0.8rem;">
+        By contributing, you agree to our
+        <a href="disclaimer.html">Donor Disclaimer & Terms</a>.
+      </p>
     </div>
-  </div>
-</section>
 
-<section>
-  <h2>Transparency & Disclaimer</h2>
-  <ul>
-    <li>This is a reward-based crowdfunding initiative, not an investment.</li>
-    <li>No financial returns, ownership, or securities are offered.</li>
-    <li>Impact figures are indicative and reported transparently.</li>
-    <li>Contributions support solar deployment and operations.</li>
-  </ul>
+    <div class="card">
+      <h3>Global – PayPal</h3>
+      <p>For international supporters and NRIs.</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL" />
+        <input type="hidden" name="no_recurring" value="0" />
+        <input type="hidden" name="item_name" value="Suryamitr Connect – Reward-Based Crowdfunding for Rural Solar (No investment, no financial return)" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <button type="submit" class="cta">Donate via PayPal</button>
+      </form>
+      <p class="note">
+        Secure PayPal donation • Reward-based • No investment or returns
+      </p>
+      <p style="font-size:0.8rem;">
+        By contributing, you agree to our
+        <a href="disclaimer.html">Donor Disclaimer & Terms</a>.
+      </p>
+    </div>
+
+  </div>
 </section>
 
 <footer>
   <p>
-    © 2025 Suryamitr Connect • A Community-Crowdfunded Rural Solar Initiative<br/>
+    © 2025 Suryamitr Connect • Reward-Based Rural Solar Crowdfunding<br/>
+    <a href="impact.html">Impact Dashboard</a> | 
+    <a href="disclaimer.html">Donor Disclaimer & Terms</a><br/>
     Contact: suryamitr.connect@gmail.com
   </p>
-  <a href="disclaimer.html" style="color:#ccc;">Donor Disclaimer & Terms</a>
 </footer>
 
 </body>
