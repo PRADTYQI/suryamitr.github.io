@@ -112,7 +112,7 @@
   <div class="grid">
     <div class="card">
       <h4>Unreliable Power</h4>
-      <p>68% of households in Barharwa pay ₹300–600/month for unreliable grid power and Coal, facing frequent power cuts and low voltage.</p>
+      <p>68% of households in Barharwa pay ₹300–600/month for unreliable grid power and kerosene, facing 8–14 hour daily outages.</p>
     </div>
     <div class="card">
       <h4>Affordability Gap</h4>
@@ -177,47 +177,173 @@
 <section id="technology">
   <h3>Technology & Data Stack</h3>
   <ul>
-    <li>ESP32-based IoT meters with OpenEMS</li>
-    <li>Real-time monitoring & Hindi WhatsApp alerts</li>
+    <li>ESP32-based IoT meters with OpenEMS for real-time monitoring</li>
+    <li>Household-level energy data with timestamps</li>
     <li>Open-source dashboards and audit trails</li>
-    <li>Carbon credit simulation → Verra/Gold Standard</li>
+    <li>Hindi WhatsApp alerts for households</li>
   </ul>
 </section>
 
-<section id="finance">
-  <h3>Unit Economics & Financial Model</h3>
+<section id="impact-dashboard">
+  <h3>Impact Dashboard (Preview)</h3>
+  <p>
+    A public dashboard will be published to report live and cumulative impact metrics.
+    During the PoC phase, values will be updated manually and later automated.
+  </p>
   <div class="grid">
     <div class="card">
-      <h4>Household Benefit</h4>
-      <p>₹400/month savings + ₹87 revenue share per 1 kW system.</p>
+      <h4>⚡ Energy Generated</h4>
+      <p><b>0 kWh</b><br/>Monthly & cumulative generation</p>
     </div>
     <div class="card">
-      <h4>Investor Returns</h4>
-      <p>~10–12% IRR over 7–8 years + carbon credits.</p>
+      <h4>🏠 Households Supported</h4>
+      <p><b>0</b><br/>Rooftops electrified</p>
     </div>
     <div class="card">
-      <h4>Platform Sustainability</h4>
-      <p>20% revenue share ensures O&M, scale, and governance.</p>
+      <h4>🌱 CO₂ Emissions Avoided</h4>
+      <p><b>0 tCO₂</b><br/>Estimated based on grid factor</p>
     </div>
   </div>
 </section>
 
-<section id="crowdfunding">
-  <h3>Crowdfunding & Community Participation</h3>
-  <p>We are building a zero-cost, transparent crowdfunding platform using GitHub Pages, PayPal, and Razorpay UPI.</p>
+<section id="carbon-methodology">
+  <h3>Carbon Impact Methodology (Indicative)</h3>
+  <p>
+    Carbon impact is estimated based on electricity generated from rooftop solar systems
+    replacing grid electricity.
+  </p>
   <ul>
-    <li>Initial PoC target: ₹20 lakh in 45 days</li>
-    <li>Target donors: Jharkhand diaspora, NRIs, climate funds</li>
-    <li>Milestone-based deployment and reporting</li>
+    <li>Measurement: Energy generated (kWh) recorded via IoT meters</li>
+    <li>Baseline: Jharkhand grid emission factor (approx. 0.82 tCO₂/MWh)</li>
+    <li>Calculation: kWh generated × grid emission factor</li>
+    <li>Purpose: Internal impact tracking and transparency</li>
   </ul>
+  <p style="font-size:0.9rem;">
+    No carbon credits are currently issued or sold. Any future registration will be
+    subject to third-party standards and regulatory compliance.
+  </p>
+</section>
+
+<section id="finance">
+  <h3>Unit Economics & Financial Model (Indicative)</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Household Benefit</h4>
+      <p>~₹400/month savings on electricity expenses, plus improved reliability.</p>
+    </div>
+    <div class="card">
+      <h4>Community Revenue Pool</h4>
+      <p>Surplus energy exported to the grid creates a shared revenue pool for operations and upkeep.</p>
+    </div>
+    <div class="card">
+      <h4>Sustainability</h4>
+      <p>Platform retains a portion of revenue for maintenance, monitoring, and long-term viability.</p>
+    </div>
+  </div>
+  <p style="font-size:0.9rem; margin-top:15px;">
+    All figures are indicative estimates based on current assumptions and local conditions.
+    Actual outcomes may vary.
+  </p>
+</section>
+
+<section id="crowdfunding">
+  <h3>Global Reward-Based Crowdfunding</h3>
+  <p>
+    Suryamitr Connect runs a <b>reward-based crowdfunding campaign</b> open to supporters in India
+    and across the world. Contributions are <b>not investments</b> and do not provide ownership or
+    financial returns.
+  </p>
+  <p>
+    Supporters receive <b>symbolic, non-financial rewards</b> that recognise their contribution
+    toward clean energy access for rural households.
+  </p>
+
+  <h4>Contribution Tiers & Rewards</h4>
+  <div class="grid">
+    <div class="card">
+      <h4>₹1,000 / $15 – Solar Supporter</h4>
+      <ul>
+        <li>Digital thank-you certificate</li>
+        <li>Name listed on Suryamitr Connect website</li>
+        <li>Impact updates via email</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>₹5,000 / $60 – Panel Patron</h4>
+      <ul>
+        <li>Engraved sticker on solar panel frame: <br/><i>"Supported by [Your Name]"</i></li>
+        <li>Photo of installed panel</li>
+        <li>Quarterly impact report</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>₹10,000 / $120 – Named Solar Panel</h4>
+      <ul>
+        <li>Permanent engraving on solar panel: <br/><i>"Donated by [Your Name]"</i></li>
+        <li>Installation photo + GPS location</li>
+        <li>Annual impact summary (energy & CO₂)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>₹50,000 / $600 – Rooftop Champion</h4>
+      <ul>
+        <li>Recognition on household site plaque</li>
+        <li>Dedicated story of beneficiary household</li>
+        <li>Priority access to impact dashboard</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>How to Contribute</h4>
+  <div class="grid">
+    <div class="card">
+      <h4>India – UPI</h4>
+      <p>Fast and secure contribution using UPI.</p>
+      <a class="cta" href="#">Contribute via UPI</a>
+      <p style="font-size:0.85rem;">(UPI QR / link will open payment app)</p>
+    </div>
+    <div class="card">
+      <h4>Global – PayPal</h4>
+      <p>For international supporters and NRIs.</p>
+      <a class="cta" href="#">Contribute via PayPal</a>
+      <p style="font-size:0.85rem;">(PayPal Donate button)</p>
+    </div>
+  </div>
+
+  <p style="font-size:0.9rem; margin-top:20px;">
+    Rewards are symbolic acknowledgements of support. They do not represent financial returns,
+    ownership, or transferable rights.
+ <p style="font-size:0.85rem;">
+Rewards are subject to installation timelines and operational feasibility.
+In case of delays, digital recognition will be provided first.
+</p>
+ </p>
 </section>
 
 <section id="ask">
   <h3>The Ask</h3>
-  <p>We are seeking <b>₹20 lakh</b> to build and validate our Proof of Concept in Barharwa.</p>
-  <p>We also welcome early impact investors and ESG-aligned partners.</p>
-  <a class="cta" href="#">Partner With Suryamitr Connect</a>
+  <p>
+    We invite individuals, communities, and organisations to <b>support this initiative</b>
+    through voluntary crowdfunding to help deploy clean energy in Barharwa.
+  </p>
+  <p>
+    This is a community support initiative, not an investment offering.
+  </p>
+  <a class="cta" href="mailto:suryamitr.connect@gmail.com?subject=Crowdfunding%20Support%20Inquiry">
+    Support the Initiative
+  </a>
   <p><b>Contact:</b> Pradeep Singh | +91-9535100551 | suryamitr.connect@gmail.com</p>
+</section>
+
+<section id="disclaimer">
+  <h3>Donor Disclaimer & Legal Notice</h3>
+  <ul>
+    <li>Contributions are voluntary donations / community support.</li>
+    <li>This platform does not offer securities, investments, or guaranteed returns.</li>
+    <li>Projected savings, revenues, and carbon impacts are estimates only.</li>
+    <li>Suryamitr Connect will make reasonable efforts to deploy funds transparently.</li>
+    <li>Donors should contribute only after understanding the social-impact nature of the initiative.</li>
+  </ul>
 </section>
 
 <footer>
