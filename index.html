@@ -1,40 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Suryamitr Connect - Free Solar for Barharwa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suryamitr Connect – ESG Solar Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0b3c5d, #1c6e8c);
+      color: #fff;
+      padding: 80px 10%;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header h2 { font-size: 1.6rem; font-weight: normal; }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 10%;
+      z-index: 10;
+    }
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #0b3c5d;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    section {
+      padding: 70px 10%;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #0b3c5d;
+    }
+    h4 { font-size: 1.3rem; margin-top: 30px; }
+    ul { margin-left: 20px; }
+    .pill {
+      display: inline-block;
+      padding: 6px 14px;
+      background: #e3f2fd;
+      color: #0b3c5d;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-right: 8px;
+      margin-top: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #f9a825;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    footer {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 40px 10%;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero -->
-  <section class="bg-warning text-center py-5">
-    <h1>सूर्यमित्र कनेक्ट</h1>
-    <p>बारहरवा के घरों पर मुफ्त सोलर – जीरो पूंजी, हमेशा कमाई!</p>
-    <img src="img1.jpg" class="img-fluid" alt="Barharwa Solar">
-  </section>
 
-  <!-- Problem & Solution -->
-  <section class="container my-5">
-    <h2>समस्या & समाधान</h2>
-    <!-- Add your copy here -->
-  </section>
+<header id="overview">
+  <h1>Suryamitr Connect</h1>
+  <h2>Rooftop Solar for Rural Jharkhand – Zero Capital, ESG-Aligned Infrastructure</h2>
+  <p>Crowdfunded • IoT-Monitored • Revenue-Sharing • Carbon Credits</p>
+  <span class="pill">Environmental Impact</span>
+  <span class="pill">Social Inclusion</span>
+  <span class="pill">Governance-Ready</span>
+</header>
 
-  <!-- Donate Section -->
-  <section class="container text-center my-5">
-    <h2>दान करें</h2>
-    <p>ग्लोबल: PayPal | भारत: UPI</p>
-    
-    <!-- PayPal Button -->
-    <div id="paypal-button-container"></div>
-    
-    <!-- Razorpay UPI Button -->
-    <button class="btn btn-primary" onclick="razorpayCheckout()">Donate via UPI/Card (₹)</button>
-  </section>
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#problem">Problem</a>
+  <a href="#solution">Solution</a>
+  <a href="#esg">ESG Impact</a>
+  <a href="#technology">Technology</a>
+  <a href="#finance">Financials</a>
+  <a href="#crowdfunding">Crowdfunding</a>
+  <a href="#ask">The Ask</a>
+</nav>
 
-  <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
-  <script src="script.js"></script>
-  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<section id="problem">
+  <h3>The Problem: Energy Poverty in Rural Jharkhand</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Unreliable Power</h4>
+      <p>68% of households in Barharwa pay ₹300–600/month for unreliable grid power and kerosene, facing 8–14 hour daily outages.</p>
+    </div>
+    <div class="card">
+      <h4>Affordability Gap</h4>
+      <p>Families cannot afford ₹60,000–₹1 lakh upfront for rooftop solar, despite high solar potential.</p>
+    </div>
+    <div class="card">
+      <h4>Systemic Risk</h4>
+      <p>Jharkhand ranks lowest in rural electrification quality, impacting livelihoods, education, and health.</p>
+    </div>
+  </div>
+</section>
+
+<section id="solution">
+  <h3>Our Solution: Zero-Capital Solar-as-a-Service</h3>
+  <p>Suryamitr Connect builds and operates rooftop solar systems for rural families at <b>zero upfront cost</b>, funded through structured crowdfunding.</p>
+  <div class="grid">
+    <div class="card">
+      <h4>Households</h4>
+      <p>Receive reliable electricity, savings, and a share of revenue—without debt.</p>
+    </div>
+    <div class="card">
+      <h4>Impact Investors</h4>
+      <p>Earn predictable returns and verified carbon credits from distributed solar assets.</p>
+    </div>
+    <div class="card">
+      <h4>Suryamitr</h4>
+      <p>Manages operations, technology, and compliance through a transparent platform.</p>
+    </div>
+  </div>
+</section>
+
+<section id="esg">
+  <h3>ESG Alignment</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Environmental</h4>
+      <ul>
+        <li>74+ tCO₂ avoided annually (PoC)</li>
+        <li>100% renewable, distributed generation</li>
+        <li>MRV-ready carbon accounting</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Social</h4>
+      <ul>
+        <li>Zero-capital access for low-income households</li>
+        <li>Women-led SHG engagement</li>
+        <li>Improved livelihoods, education, safety</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Governance</h4>
+      <ul>
+        <li>IoT-based energy & revenue tracking</li>
+        <li>Automated payouts via UPI/PayPal</li>
+        <li>Regulation-aligned (JSERC net metering)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <h3>Technology & Data Stack</h3>
+  <ul>
+    <li>ESP32-based IoT meters with OpenEMS</li>
+    <li>Real-time monitoring & Hindi WhatsApp alerts</li>
+    <li>Open-source dashboards and audit trails</li>
+    <li>Carbon credit simulation → Verra/Gold Standard</li>
+  </ul>
+</section>
+
+<section id="finance">
+  <h3>Unit Economics & Financial Model</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Household Benefit</h4>
+      <p>₹400/month savings + ₹87 revenue share per 1 kW system.</p>
+    </div>
+    <div class="card">
+      <h4>Investor Returns</h4>
+      <p>~10–12% IRR over 7–8 years + carbon credits.</p>
+    </div>
+    <div class="card">
+      <h4>Platform Sustainability</h4>
+      <p>20% revenue share ensures O&M, scale, and governance.</p>
+    </div>
+  </div>
+</section>
+
+<section id="crowdfunding">
+  <h3>Crowdfunding & Community Participation</h3>
+  <p>We are building a zero-cost, transparent crowdfunding platform using GitHub Pages, PayPal, and Razorpay UPI.</p>
+  <ul>
+    <li>Initial PoC target: ₹3 lakh in 45 days</li>
+    <li>Target donors: Jharkhand diaspora, NRIs, climate funds</li>
+    <li>Milestone-based deployment and reporting</li>
+  </ul>
+</section>
+
+<section id="ask">
+  <h3>The Ask</h3>
+  <p>We are seeking <b>₹20 lakh</b> under the <b>Startup India Seed Fund Scheme</b> to build and validate our Proof of Concept in Barharwa.</p>
+  <p>We also welcome early impact investors and ESG-aligned partners.</p>
+  <a class="cta" href="#">Partner With Suryamitr Connect</a>
+  <p><b>Contact:</b> [Your Name] | +91-[Your Number] | suryamitr.connect@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2025 Suryamitr Connect • Building Rural Solar Infrastructure from the Ground Up</p>
+</footer>
+
 </body>
 </html>
