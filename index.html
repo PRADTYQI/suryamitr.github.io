@@ -307,10 +307,26 @@
       <p style="font-size:0.85rem;">(UPI QR / link will open payment app)</p>
     </div>
     <div class="card">
-      <h4>Global – PayPal</h4>
-      <p>For international supporters and NRIs.</p>
-      <a class="cta" href="#">Contribute via PayPal</a>
-      <p style="font-size:0.85rem;">(PayPal Donate button)</p>
+      <h3>Global – PayPal</h3>
+<p>For international supporters and NRIs.</p>
+
+<form action="https://www.paypal.com/donate" method="post" target="_blank">
+  <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL" />
+  <input type="hidden" name="no_recurring" value="0" />
+  <input type="hidden" name="item_name"
+    value="Suryamitr Connect – Reward-Based Crowdfunding for Rural Solar (No investment, no financial return)" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <button type="submit" class="cta">Donate via PayPal</button>
+</form>
+
+<p class="note">
+  Secure PayPal donation • Reward-based crowdfunding • No investment or financial return
+</p>
+<p style="font-size:0.8rem;">
+By contributing, you agree to our
+<a href="disclaimer.html">Donor Disclaimer & Terms</a>.
+</p>
+
     </div>
   </div>
 
