@@ -3,30 +3,17 @@
 
   <url>
     <loc>https://pradtyqi.github.io/suryamitr.github.io/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://pradtyqi.github.io/suryamitr.github.io/rewards.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://pradtyqi.github.io/suryamitr.github.io/impact.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://pradtyqi.github.io/suryamitr.github.io/disclaimer.html</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://pradtyqi.github.io/suryamitr.github.io/trust.html</loc>
   </url>
 
 </urlset>
