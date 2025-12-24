@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Technical Whitepaper | Suryamitr Connect</title>
+  <meta name="description" content="A technical proof of concept documenting low-cost, open-source solar energy monitoring using IoT and open standards for ESG-aligned infrastructure." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Low-Cost Solar Energy Monitoring – Technical Whitepaper" />
+  <meta property="og:description" content="An open, non-commercial proof of concept for transparent solar energy monitoring using IoT and open-source platforms." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://pradtyqi.github.io/suryamitr.github.io/whitepaper.html" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    header {
+      background: #0b3c5d;
+      color: #ffffff;
+      padding: 60px 10%;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.05rem;
+      max-width: 800px;
+    }
+    section {
+      padding: 50px 10%;
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h2 {
+      color: #0b3c5d;
+      font-size: 1.9rem;
+      margin-bottom: 15px;
+    }
+    p, li {
+      font-size: 0.95rem;
+      max-width: 900px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    pre {
+      background: #f1f5f9;
+      padding: 15px;
+      overflow-x: auto;
+      font-size: 0.85rem;
+    }
+    .note {
+      background: #f1f5f9;
+      padding: 18px;
+      border-left: 4px solid #0b3c5d;
+      font-size: 0.9rem;
+      margin-top: 25px;
+      max-width: 900px;
+    }
+    footer {
+      background: #0b3c5d;
+      color: #ffffff;
+      padding: 30px 10%;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    a {
+      color: #0b3c5d;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Low-Cost Solar Energy Monitoring</h1>
+  <p>
+    Technical Whitepaper documenting a proof of concept for real-time solar
+    energy monitoring using open-source hardware and software.
+  </p>
+</header>
+
+<section>
+  <h2>Executive Summary</h2>
+  <p>
+    This whitepaper presents a technical Proof of Concept (PoC) demonstrating
+    how small-scale solar energy systems can be monitored in real time using
+    low-cost, open-source components. The objective is to validate feasibility,
+    transparency, and scalability for decentralized and rural solar
+    infrastructure.
+  </p>
+</section>
+
+<section>
+  <h2>Background</h2>
+  <p>
+    Distributed solar installations often lack continuous monitoring due to
+    high costs and proprietary systems. This results in limited visibility,
+    delayed fault detection, and reduced accountability.
+  </p>
+  <p>
+    The PoC described here focuses on an open and minimal architecture that
+    prioritizes accessibility and auditability.
+  </p>
+</section>
+
+<section>
+  <h2>Problem Definition</h2>
+  <ul>
+    <li>No real-time performance visibility</li>
+    <li>Manual fault identification</li>
+    <li>Limited historical energy data</li>
+    <li>High cost of vendor-locked monitoring solutions</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Proposed Solution</h2>
+  <p>
+    The system integrates a current sensor with an ESP32 microcontroller to
+    collect solar output data and transmit it over Wi-Fi to an open-source
+    energy management platform.
+  </p>
+</section>
+
+<section>
+  <h2>System Architecture</h2>
+  <pre>
+Solar Panel
+   ↓
+Charge Controller
+   ↓
+Current Sensor (ACS712)
+   ↓
+ESP32 Microcontroller (Wi-Fi)
+   ↓
+OpenEMS Platform
+  </pre>
+</section>
+
+<section>
+  <h2>Hardware Components</h2>
+  <ul>
+    <li>ESP32 microcontroller with Wi-Fi</li>
+    <li>ACS712 Hall-effect current sensor</li>
+    <li>Solar charge controller</li>
+    <li>Low-voltage wiring and connectors</li>
+  </ul>
+  <p>
+    Approximate electronics cost (excluding panel): ₹1,100.
+  </p>
+</section>
+
+<section>
+  <h2>Software Stack</h2>
+  <ul>
+    <li>Firmware: Arduino (ESP32)</li>
+    <li>Data transmission: Wi-Fi (HTTP / MQTT)</li>
+    <li>Energy platform: OpenEMS</li>
+    <li>Visualization: Web-based dashboard</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Results</h2>
+  <ul>
+    <li>Stable real-time power monitoring</li>
+    <li>Daily energy generation tracking</li>
+    <li>Reliable data transmission</li>
+    <li>Feasibility proven at low cost</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Scalability & Use Cases</h2>
+  <ul>
+    <li>Rural electrification projects</li>
+    <li>Community solar installations</li>
+    <li>Schools and health centers</li>
+    <li>CSR and ESG monitoring initiatives</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Limitations</h2>
+  <ul>
+    <li>Single-parameter sensing (current only)</li>
+    <li>Proof-of-concept scale</li>
+    <li>Internet connectivity required</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Future Roadmap</h2>
+  <ul>
+    <li>Voltage and energy billing integration</li>
+    <li>Automated fault alerts</li>
+    <li>Multi-node aggregation</li>
+    <li>Third-party audits and verification</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Conclusion</h2>
+  <p>
+    This Proof of Concept demonstrates that transparent, real-time solar
+    monitoring can be achieved using open technologies at minimal cost. The
+    approach supports data-driven decision-making and ESG-aligned
+    infrastructure development.
+  </p>
+
+  <div class="note">
+    This document is provided for technical and informational purposes only.
+    It does not represent a commercial offer, investment opportunity, or
+    certified deployment.
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 Suryamitr Connect<br />
+    Open technical documentation for public-interest solar infrastructure
+  </p>
+</footer>
+
+</body>
+</html>
